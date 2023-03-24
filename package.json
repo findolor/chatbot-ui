@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "PORT=3001 next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "PORT=3001 next start",
     "start:electron": "concurrently \"yarn start\" \"wait-on http://localhost:3001 && electron .\"",
     "lint": "next lint"
   },
